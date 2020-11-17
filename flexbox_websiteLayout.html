@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flex website layout</title>
+        <style>
+            * { box-sizing: border-box; }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+            }
+            .col-1 {
+                background: lightseagreen;
+                flex: 1;
+            }
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+            }
+            .mainContent {
+                display: flex;
+                flex-direction: row;
+            }
+            .mainContent > article {
+                flex: 3;
+                min-height: 60vh;
+                background: darkgrey;
+                border: 10px solid rgb(37, 36, 36);
+            }
+            .mainContent > sidebar {
+                background: peru;
+                flex: 1;
+            }
+            header,footer {
+                background: yellowgreen;
+                height: 20vh;
+                text-align: center;
+            }
+            header,footer,sidebar,article {
+                padding: 1em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <sidebar class="col-1">Left Sidebar</sidebar>
+        <div class="col-2">
+            <header><h1>HEADER-SAMPLE FLEXBOX WEBSITE LAYOUT</h1></header>
+            <section class="mainContent">
+                <article>
+                    <h2>First article</h2>
+                    <p>main content: Occupies large part of
+                        center area and contains the main
+                        content of a given webpage</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Many of us are convinced that if we could go back in time 
+                        and have a chat with our 20-year old selves, 
+                        then we could absolutely kill at adult-ing and beyond.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>By the time you get to your 40s, you realize that you lose friends every time. 
+                        You put them down, but when you try to pick them up again, they’ve already moved on. 
+                        Then, it feels as though it’s worth it 
+                        because you think you’re in love and you want to spend all of your time with that person.</p>
+                </article>
+                <sidebar>Right Sidebar</sidebar>
+            </section>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>

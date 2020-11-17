@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Media Object Layout</title>
+        <style>
+            .media {
+                display: flex;
+                align-items: flex-start;
+                background: khaki;
+                padding: 1em;
+                border-radius: 3px;
+                max-width: 24em;
+            }
+            .media-object {
+                margin-right: .5em;
+                font-size: 5em;
+            }
+            .media-img {
+                margin: 10px;
+                border: 3px solid #000;
+                box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+                max-width: 10vw;
+            }
+            .media-body {
+                flex: 1;
+            }
+            .media-heading {
+                margin: 0 0 1em;
+            }
+
+        </style>
+    </head>
+    <div class="media">
+        <img class="media-img" src="/assets/3-d-186h.jpg" alt="Sample Photo">
+        <div class="media-body">
+            <h3 class="media-heading">White Brick Sand</h3>
+            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+                Iterative approaches to corporate strategy 
+                foster collaborative thinking to further the overall value proposition.</p>
+            <div class="media">
+                <div class="media-object">&phone;</div>
+                <div class="media-body">
+                    <h3 class="media-heading">Eco Processed</h3>
+                    <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

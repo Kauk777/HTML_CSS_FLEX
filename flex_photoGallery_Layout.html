@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Photo Gallery Layout</title>
+        <style>
+            body {
+                background-color:darkgrey;
+            }
+            .images {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                flex-direction: row;
+                max-height: 100vh;
+                align-content:space-around;
+            }
+            img {
+                margin: 10px;
+                border: 3px solid #000;
+                box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+                max-width: 23vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="images">
+            <img src="/assets/BL_logo_square_png.png" alt="Sample Photo">
+            <img src="/assets/batman2yf7.jpg" alt="Sample Photo">
+            <img src="/assets/img36.jpg" alt="Sample Photo">
+            <img src="/assets/3-d-186h.jpg" alt="Sample Photo">
+            <img src="/assets/3-d-187e.jpg" alt="Sample Photo">
+            <img src="/assets/3-d-191a.jpg" alt="Sample Photo">
+        </div>
+    </body>
+</html>

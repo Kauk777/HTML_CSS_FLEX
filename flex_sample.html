@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flex demo</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: brown;
+                font-weight: bold;
+                padding: 10px;
+                
+            }
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: rgb(116, 42, 165);
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                text-align: center;
+                font-weight: bold;
+            }
+            .mainContentItem {
+                text-align: left;
+                background: lightblue;
+            }
+            article {
+                padding: 10px;
+                margin: 10px;
+            }
+            .sidebarLeft {
+                background:olive;
+            }
+            .sidebarRight {
+                background: seagreen;
+            }
+            .sidebarItem { 
+                flex: 1 0 0;
+                border: 10px solid greenyellow;
+            }
+            .mainContentItem { flex: 3 0px; }
+            .sidebarLeft { order: 1; }
+            .mainContentItem { order: 2; }
+            .sidebarRight { order: 3; }
+        </style>
+
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER-SAMPLE FLEXBOX EXAMPLE</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+                    <p>main content: Occupies large part of
+                        center area and contains the main
+                        content of a given webpage</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Many of us are convinced that if we could go back in time 
+                        and have a chat with our 20-year old selves, 
+                        then we could absolutely kill at adult-ing and beyond.</p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>By the time you get to your 40s, you realize that you lose friends every time. 
+                        You put them down, but when you try to pick them up again, they’ve already moved on. 
+                        Then, it feels as though it’s worth it 
+                        because you think you’re in love and you want to spend all of your time with that person.</p>
+                </article>
+            </section>
+            <sidebar class="sidebarItem sidebarLeft">Left sidebar</sidebar>
+            <sidebar class="sidebarItem sidebarRight">Right sidebar</sidebar>
+        </div>
+        <footer class="footerContainer">
+            footer
+        </footer>
+    </body>
+</html>
